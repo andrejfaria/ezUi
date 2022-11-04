@@ -1,8 +1,9 @@
 # FrontEnd Training 
-Teste 
-Teste 
-Teste 
-Teste 
+
+
+#run the localhost -> npm run dev
+
+
 
 
 ## Getting started
