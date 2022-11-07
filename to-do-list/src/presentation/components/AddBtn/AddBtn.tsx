@@ -1,14 +1,25 @@
 import { Button } from "@ceiia/button";
+import { useRef } from "react";
 
 
-function CloseButton() {
+function AddBtn() {
+
+
+  const buttonName: string = 'Add task'
+  // let buttonName = useRef<string>('add')
+
+
+  // const handleChange = () => {
+  //   setReminder(!reminder);
+  // };
+
   return (
     <div className="close-btn">
       <Button
-        label="Close Task"
+        label={buttonName}
         className="close-task-btn"
         onClick={() => {
-          console.log('close-btn')
+
         }}
         type="button"
         shape="radius-medium"
@@ -20,4 +31,4 @@ function CloseButton() {
 }
 
 
-export default CloseButton;
+export default AddBtn;

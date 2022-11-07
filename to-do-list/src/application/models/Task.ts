@@ -20,8 +20,10 @@ export interface TaskResponse {
 }
 
 const initialState: taskState = {
-  tasks: []
+  tasks: [],
+
 }
+
 
 export const taskSlice = createSlice(
   {
@@ -48,7 +50,8 @@ export const taskSlice = createSlice(
       },
       removeTask: (state, action: PayloadAction<number>) => {
         state.tasks = state.tasks.filter(({ id }) => id !== action.payload)
-      }
+      },
+
     }
   })
 
