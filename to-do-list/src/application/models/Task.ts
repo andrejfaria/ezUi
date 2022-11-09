@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { RootState } from '../store/ConfigureStore.ts';
+import { RootState } from '../store/ConfigureStore';
 
 
 // Task Domain

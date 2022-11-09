@@ -1,5 +1,4 @@
-import { useSelector } from "react-redux";
-import { TypedUseSelectorHook, useDispatch } from "react-redux";
+import { useSelector, TypedUseSelectorHook, useDispatch } from "react-redux";
 import { RootState, TaskDispatch } from "./ConfigureStore";
 
 export const useTaskDispatch: () => TaskDispatch = useDispatch;

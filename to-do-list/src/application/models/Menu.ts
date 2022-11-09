@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { RootState } from "../store/ConfigureStore.ts"
+import { RootState } from "../store/ConfigureStore"
 
 export interface Menu {
   showMenu: string
