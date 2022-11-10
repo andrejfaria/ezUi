@@ -1,16 +1,15 @@
 {
-  "name": "to-do-list",
+  "name": "refator-to-do-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts"
   },
   "dependencies": {
-    "@ceiia/button": "^0.0.7",
-    "@ceiia/style": "^0.0.9",
     "@reduxjs/toolkit": "^1.8.6",
     "@types/react-redux": "^7.1.24",
     "@typescript-eslint/parser": "^5.41.0",
@@ -20,9 +19,10 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
     "react-redux": "^8.0.4",
-    "react-router-dom": "^6.4.2",
-    "sass": "^1.55.0"
+    "react-router-dom": "6",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
