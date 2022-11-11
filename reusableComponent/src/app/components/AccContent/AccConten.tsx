@@ -1,5 +1,10 @@
-function AccContent(props: any) {
-  const { expand, content } = props
+import { useContext } from "react"
+import { AppContext } from "../AccordionComponent/Accordion"
+
+function AccContent() {
+  // const { expand, content } = props
+  const { expand, content } = useContext(AppContext)
+
   return (
     <>
       {expand ? <div className='content'>{content}</div> : null}

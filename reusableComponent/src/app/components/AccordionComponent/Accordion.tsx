@@ -1,7 +1,10 @@
+import { createContext } from "react"
 import AccContent from "../AccContent/AccConten"
 import AccHeader from "../AccHeader/AccHeader"
 import useToggle from "../HookToggle/useToggle"
 
+
+export const AppContext = createContext<any>({})
 
 
 function Accordion() {
@@ -19,15 +22,16 @@ function Accordion() {
   // console.log('expander', expand)
   return (
 
-    <div className="accordion">
-      <AccHeader
-        expand={expand}
-        toggleExpand={toggleExpand}
-        title={title}
-      ></AccHeader>
-      <AccContent expand={expand} content={content} />
-    </div>
-
+    <AppContext.Provider value={{ expand, toggleExpand, title, content }}>
+      <div className="accordion">
+        <AccHeader
+        // expand={expand}
+        //toggleExpand={toggleExpand}
+        //title={title}
+        ></AccHeader>
+        <AccContent /*expand={expand} content={content}*/ />
+      </div>
+    </AppContext.Provider>
   )
 }
 

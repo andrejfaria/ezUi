@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { AppContext } from "../AccordionComponent/Accordion";
 
 function IconComponent(props: any) {
-  const { expand, isOpen, isClose } = props;
+  const { isOpen, isClose } = props;
+  const { expand } = useContext(AppContext)
+
   return (
     <span>
       {expand ? isOpen : isClose}

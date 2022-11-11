@@ -1,8 +1,11 @@
 import IconComponent from "../IconComponent/IconComponent"
 import { FaChevronDown, FaChevronRight } from 'react-icons/fa'
+import { useContext } from "react"
+import { AppContext } from "../AccordionComponent/Accordion"
 
-function AccHeader(props: any) {
-  const { title, expand, toggleExpand } = props
+function AccHeader() {
+
+  const { toggleExpand, title } = useContext(AppContext)
 
   return (
     <>
@@ -11,7 +14,10 @@ function AccHeader(props: any) {
           onClick={toggleExpand}
         >
           {title}
-          <IconComponent expand={expand} isOpen={<FaChevronDown />} isClose={<FaChevronRight />}> </IconComponent>
+          <IconComponent /*expand={expand}*/
+            isOpen={<FaChevronDown />}
+            isClose={<FaChevronRight />}>
+          </IconComponent>
         </button>
       </div>
     </>
