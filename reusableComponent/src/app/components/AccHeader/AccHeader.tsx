@@ -11,7 +11,7 @@ function AccHeader(props: any) {
           onClick={toggleExpand}
         >
           {title}
-          <IconComponent expand={expand} FaChevronDown={FaChevronDown} FaChevronRight={FaChevronRight}> </IconComponent>
+          <IconComponent expand={expand} isOpen={<FaChevronDown />} isClose={<FaChevronRight />}> </IconComponent>
         </button>
       </div>
     </>
