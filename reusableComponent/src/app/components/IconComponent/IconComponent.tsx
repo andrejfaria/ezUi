@@ -1,7 +1,6 @@
-import { FaChevronDown, FaChevronRight } from 'react-icons/fa'
 
 function IconComponent(props: any) {
-  const { expand } = props;
+  const { expand, FaChevronDown, FaChevronRight } = props;
   return (
     <span>
       {expand ? <FaChevronDown /> : <FaChevronRight />}
