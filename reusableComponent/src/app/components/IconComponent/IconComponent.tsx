@@ -1,9 +1,9 @@
 
 function IconComponent(props: any) {
-  const { expand, FaChevronDown, FaChevronRight } = props;
+  const { expand, isOpen, isClose } = props;
   return (
     <span>
-      {expand ? <FaChevronDown /> : <FaChevronRight />}
+      {expand ? isOpen : isClose}
     </span>
   )
 }
