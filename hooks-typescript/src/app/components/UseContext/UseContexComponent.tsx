@@ -21,9 +21,10 @@ function UseContexComponent() {
   const [user, setUser] = useState<UserState>({
     first: 'João',
     last: 'Faria'
-
   })
+
   return (
+
     <UserContext.Provider value={user}>
       <h2>UseContexComponent</h2>
       <ConsumerComponent />
@@ -35,6 +36,7 @@ function UseContexComponent() {
         })}
       >Change Name</button>
     </UserContext.Provider >
+
   )
 }
 
