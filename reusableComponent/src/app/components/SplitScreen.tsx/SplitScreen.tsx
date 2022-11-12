@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 import styled from 'styled-components';
 
 
@@ -10,19 +10,17 @@ flex: ${props => props.weight};`
 
 
 
-function SplitScreen({
-  left: Left,
-  right: Right,
-  leftWeight = 1,
-  rightWeight = 1,
-}) {
+function SplitScreen({ children, leftWeight, rightWeight }) {
+
+  const [left, right] = children
+
   return (
     <Container>
       <Pane weight={leftWeight}>
-        <Left />
+        {left}
       </Pane>
       <Pane weight={rightWeight}>
-        <Right />
+        {right}
       </Pane>
     </Container >
   )

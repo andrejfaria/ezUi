@@ -28,12 +28,11 @@ function App() {
 
         <Accordion />
 
-        <SplitScreen
-          left={Left}
-          right={Right}
-          leftWeight={1}
-          rightWeight={3}
-        />
+        <SplitScreen leftWeight={1} rightWeight={3} >
+          <Left name={'Left Side'} />
+          <Right name={'Right Side'} />
+        </SplitScreen>
+
         < InputComponent renderText={showValue} />
         <br />
         {/* <Editable /> */}

@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Right() {
+function Right({ name }) {
   return (
     <div style={{ backgroundColor: 'green' }} >
       <h1>
-        Right
+        {name}
       </h1>
     </div>
   )

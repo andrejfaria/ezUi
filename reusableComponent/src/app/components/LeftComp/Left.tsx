@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-function Left() {
+function Left({ name }) {
   return (
     <div style={{ backgroundColor: 'blue' }}>
       <h1>
-        Left
+        {name}
       </h1>
     </div>
   )
