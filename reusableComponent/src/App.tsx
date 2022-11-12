@@ -2,8 +2,10 @@
 import './App.css'
 import Accordion from './app/components/AccordionComponent/Accordion'
 import InputComponent from './app/components/InputComponent/InputComponent'
+import SplitScreen from './app/components/SplitScreen.tsx/SplitScreen'
 // import Editable from './app/components/Editable/Editable'
-
+import Left from './app/components/LeftComp/Left'
+import Right from './app/components/RightComp /Right'
 
 function App() {
 
@@ -25,7 +27,14 @@ function App() {
       <div>
 
         <Accordion />
-        <InputComponent renderText={showValue} />
+
+        <SplitScreen
+          left={Left}
+          right={Right}
+          leftWeight={1}
+          rightWeight={3}
+        />
+        < InputComponent renderText={showValue} />
         <br />
         {/* <Editable /> */}
         <InputComponent renderText={multiply} />
