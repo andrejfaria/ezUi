@@ -12,6 +12,7 @@ import LargePeopleList from './app/components/People/LargePeopleList'
 import SmallProductList from './app/components/Products/SmallProductList'
 import LargeProdutsList from './app/components/Products/LargeProdutsList'
 import NumberedList from './app/components/NumberedList/NumberedList'
+import Modal from './app/components/Modal/Modal'
 
 function App() {
 
@@ -78,6 +79,14 @@ function App() {
       <div>
 
         <Accordion />
+
+        <Modal>
+          <RegularList
+            items={products}
+            resourceName='products'
+            itemComponent={SmallProductList}>
+          </RegularList>
+        </Modal>
 
 
         <NumberedList
