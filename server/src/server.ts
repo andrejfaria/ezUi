@@ -3,5 +3,4 @@ import { config } from 'dotenv';
 config();
 
 import { server } from './app';
-
-server.startServer()
+server.listen();
