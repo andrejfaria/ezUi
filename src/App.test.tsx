@@ -9,7 +9,7 @@ describe('App', () => {
     render(<App />)
     //ACT
     expect(screen.getByRole('heading', {
-      level: 1
+      level: 3
     })).toHaveTextContent('Hello Test World')
     //EXPECT
   })
